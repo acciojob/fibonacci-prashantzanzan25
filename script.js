@@ -1,8 +1,19 @@
 function fibonacci(num) {
 // your code here
-	if(num===1) return 0
-if(num retur===2) return 1
-return fibonacci(num-1)+fibonacci (num-2)
+	if(num===0){
+		return 0;
+	}
+	else if(num===1){
+		return 1;
+	}
+	else{
+		let fib=[0,1];
+
+		for(let i=2; i<=num; i++){
+			fib[i] = fi[i-1]+fib[i-2];
+		}
+	}
+	return fib[num];
 }
 module.exports=fibonacci;
 
